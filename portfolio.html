@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <title>Portfolio</title>
+  <style>
+    nav {
+      background-color: rgb(117, 117, 114);
+      padding: 0px;
+      color: white;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      margin: 0px;
+    }
+    li {
+      margin-right: 20px;
+    }
+
+    li:nth-child(3) {
+      margin-left: 60%;
+    }
+
+    body {
+      margin: 0px;
+      padding: 0px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      background-color: rgb(117, 117, 114);
+    }
+
+    .header {
+      font-weight: 100;
+      font-size: 24px;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    .container p {
+      font-weight: 200;
+    }
+
+    .text,
+    .text-1 {
+      margin-left: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .text-1 p {
+      margin-bottom: 0;
+      padding-bottom: 12px;
+      margin-top: 0;
+    }
+    .img{
+      box-shadow:0 0 5px white;
+      border: 10px solid white;
+      margin-right: 20px;
+    }
+    .caption-text{
+      position: relative;
+    }
+    .caption{
+      position: absolute;
+      padding: 20px;
+      color: black;
+      background-color: white;
+      opacity: 0.8;
+      left: 50%;
+    }
+    .caption-3{
+      position: absolute;
+      height: 130px;
+      background-color: white;
+      color: black;
+      top: 0%;
+      transform: translate(0%, 0%);
+      width: 130px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    .caption1{
+      left: 0%;
+    }
+    .caption2{
+      left: 17%;
+    }
+    .caption3{
+      left: 33.5%;
+    }
+    .caption4{
+      left: 50.3%;
+    }
+    .caption5{
+      left: 67%;
+    }
+    .caption6{
+      left: 84%;
+    }
+    .caption-3:hover{
+      opacity: 0.6;
+    }
+    .caption-1{
+      top: 50%;
+      transform: translate(-120%, -80%);
+      width: 380px;
+    }
+    .caption-2{
+      position: absolute;
+      top: 20%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+    }
+    .img-sm{
+      border: 6px solid white;
+      margin-right: 10px;
+      height: 160px;
+      z-index: 1;
+    }
+    .img-sm:hover{
+      background-color: white;
+      border: 6px solid rgb(229, 228, 228);
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    a:hover{
+      color: rgba(245, 245, 245, 0.736);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><img src="camera.png" alt="" style="height: 4em;"></li>
+      <li><span style="font-weight: bold; font-size: 24px;">Julia Jacobson</span><br><span
+          style="font-size: 20px; font-weight: 100; opacity: 0.9;">The Photographer</span></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#inst">Instagram</a></li>
+    </ul>
+  </nav>
+  <h2 class="header" id="about">About Me</h2>
+  <div class="container">
+    <div><img src="portfolio/1.webp" alt="" style="height: 290px; " class="img"></div>
+    <div class="text">
+      <p><b>My name is Julia Jacobson</b></p>
+      <p>I am a photographer who likes everything - <br>nature, people and travel</p>
+      <p>If you like my photos, call or write me</p>
+      <p>Email: photojacobson@gmail.com</p>
+      <p>Phone: +01(111)333-55-77</p>
+    </div>
+    <div class="text-1">
+      <p>- 200+ happy clients</p>
+      <p>- 120 portrait shoots</p>
+      <p>- 600+ nature shoots</p>
+      <p>- 1000+ wedding shoots</p>
+      <p>- 12 countries visited</p>
+      <p>- 600+ coffee drinked</p>
+    </div>
+  </div>
+  <h2 class="header" id="works">My Last Works</h2>
+  <div class="container">
+    <div>
+      <img src="portfolio/work1.jpg" alt="" style="height: 220px; " class="img">
+      <img src="portfolio/work2.jpg" alt="" style="height: 220px; " class="img">
+      <img src="portfolio/work3.jpg" alt="" style="height: 220px; " class="img">
+    </div>
+  </div>
+  <div class="container">
+    <div class="caption-text">
+      <img src="portfolio/work4.jpg" alt="" style="height: 350px; " class="img">
+      <div class="caption caption-1">
+        <div>
+          <h2>Morning coffee</h2>
+        <p>Cupiditate nesciunt suscipit sunt molestiae pariatur nihil explicabo voluptas assumenda...</p>
+        </div>
+      </div>
+      <img src="portfolio/work5.jpg" alt="" style="height: 350px; " class="img">
+    </div>
+  </div>
+  <div class="container">
+    <div class="caption-text">
+      <img src="portfolio/work6.jpg" alt="" style="height: 720px; " class="img">
+      <div class="caption caption-2">
+        <div>
+          <h2>Landscape Photo</h2>
+        <p>Architecto debitis fugit quos animi possimus perspiciatis vel aperiam...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="header" id="inst">Follow me on Instagram</h2>
+  <div class="container">
+    <div class="caption-text">
+        <img src="portfolio/1-img.jpg" alt="" class="img-sm">
+          <div class="caption-3 caption1 caption">
+              <i class="bi bi-zoom-in"></i>
+          </div>
+        <img src="portfolio/2-img.jpg" alt="" class="img-sm">
+          <div class="caption caption-3 caption2">
+            <i class="bi bi-zoom-in"></i>
+          </div>
+        <img src="portfolio/3-img.jpg" alt="" class="img-sm">
+          <div class="caption-3 caption3 caption">
+            <i class="bi bi-zoom-in"></i>
+          </div>
+        <img src="portfolio/4-img.jfif" alt="" class="img-sm">
+          <div class="caption-3 caption4 caption">
+            <i class="bi bi-zoom-in"></i>
+          </div>
+        <img src="portfolio/5-img.jpg" alt="" class="img-sm">
+          <div class="caption-3 caption5 caption">
+            <i class="bi bi-zoom-in"></i>
+          </div>
+        <img src="portfolio/6-img.jpg" alt="" class="img-sm">
+          <div class="caption-3 caption6 caption">
+            <i class="bi bi-zoom-in"></i>
+          </div>
+    </div>
+  </div>
+  <div class="container">
+    <p>©Copyright 2018-2020 Julia Jacobson</p>
+  </div>
+</body>
+
+</html>
